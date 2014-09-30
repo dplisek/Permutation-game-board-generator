@@ -116,12 +116,7 @@ void printToFile( node * nodes, char * name, int n) {
     int count = getCount(n);
     int i;
     for ( i = 0; i < count; i++) {
-        if ( i == count-1 ) {
-            fprintf(output, "%i", nodes[i].value);
-        } else {
-            fprintf(output, "%i\n", nodes[i].value);
-        }
-        
+        fprintf(output, "%i\n", nodes[i].value);
     }
     fclose(output);
 }
